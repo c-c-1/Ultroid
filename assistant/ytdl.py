@@ -260,14 +260,9 @@ async def _(event):
             ),
         ]
     description = description if description != "" else "None"
-    text = f"**Title: [{title}]({_yt_base_url}{vid_id})**\n\n"
-    text += f"`📝 Description: {description}\n\n"
-    text += f"「 Duration: {time_formatter(int(duration)*1000)} 」\n"
-    text += f"「 Artist: {artist} 」\n"
-    text += f"「 Views: {views} 」\n"
-    text += f"「 Likes: {likes} 」\n"
-    text += f"「 Size: {humanbytes(size)} 」`"
-    button = Button.switch_inline("Search More", query="yt ", same_peer=True)
+    text = f"**العنوان : [{title}]({_yt_base_url}{vid_id})**\n\n"
+    text += f"الوصف : {description}"
+    button = Button.switch_inline("اضغط للبحث", query="yt ", same_peer=True)
     try:
         await event.edit(
             text,
