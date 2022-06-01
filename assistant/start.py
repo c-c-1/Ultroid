@@ -51,7 +51,7 @@ _settings = [
 
 _start = [
     [
-        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🌐", data="lang"),
+        Button.inline("اللغة", data="lang"),
         Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
     ],
     [
